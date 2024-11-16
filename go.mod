@@ -2,11 +2,14 @@ module vyajan_desktop
 
 go 1.21
 
-toolchain go1.23.3
-
-require github.com/wailsapp/wails/v2 v2.9.2
+require (
+	github.com/joho/godotenv v1.5.1
+	github.com/wailsapp/wails/v2 v2.9.2
+	golang.org/x/oauth2 v0.24.0
+)
 
 require (
+	cloud.google.com/go/compute/metadata v0.3.0 // indirect
 	github.com/bep/debounce v1.2.1 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/godbus/dbus/v5 v5.1.0 // indirect
@@ -35,5 +38,3 @@ require (
 	golang.org/x/sys v0.20.0 // indirect
 	golang.org/x/text v0.15.0 // indirect
 )
-
-// replace github.com/wailsapp/wails/v2 v2.9.2 => /home/vichukartha/go/pkg/mod
